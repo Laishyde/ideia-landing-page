@@ -1,0 +1,37 @@
+# LIXO DO WINDOWS
+*.log
+*.tmp
+ntuser.dat*
+Desktop.ini
+Thumbs.db
+
+# ARQUIVOS LOCAIS
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# BUILDS LOCAIS
+build/
+dist/
+out/
+
+# ARQUIVOS LIXO DO PROJETO
+*.zip
+*.pdf
+*.exe
+*.mp4
+*.gif
+*.zip/
+php*/
+xampp*/
+platform-tools*/
+*.txt
+senha*
+twilio*
+
+# WINDOWS SYSTEM
+$RECYCLE.BIN/
+System Volume Information/
