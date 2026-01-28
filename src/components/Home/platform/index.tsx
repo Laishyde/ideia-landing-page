@@ -13,7 +13,8 @@ const Platform = () => {
 useEffect(() => {
   const loop = () => {
     if (containerRef.current) {
-      const width = containerRef.current.scrollWidth / 2;
+    const element = containerRef.current as HTMLElement;
+    const width = element.scrollWidth / 2;
       setTranslateX((prev) => {
         if (prev <= -width) {
           return 0;
