@@ -91,7 +91,7 @@ const Hero = () => {
               </button>
             </div>
 
-            {/* Imagem mobile - escondida em telas grandes */}
+            {/* Imagem mobile - escondida telas grandes */}
             <motion.div
               {...rightAnimation}
               className="lg:hidden block mx-auto mt-12"
