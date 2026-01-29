@@ -63,7 +63,7 @@ const Hero = () => {
           <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">
             <div className="flex gap-6 items-center lg:justify-start justify-center mb-5 mt-24">
               <Image
-                src= {`${getImagePrefix()}images/icons/icon-bag.svg`}
+                src="/images/icons/icon-bag.svg"
                 alt="icon"
                 width={40}
                 height={40}
@@ -102,7 +102,7 @@ soluções em informática
               </Link>
               <Link href="#" className="hover:scale-110 duration-300">
                 <Image
-                  src= {`${getImagePrefix()}images/hero/applestore.png`}
+               src="/images/hero/applestore.png"
                   alt="App Store"
                   width={240}
                   height={70}
@@ -115,12 +115,13 @@ soluções em informática
             className="col-span-7 lg:block hidden"
           >
             <div className="ml-20 -mr-64">
-              <Image
-                src= {`${getImagePrefix()}images/hero/image.png`}
-                alt="Banner"
-                width={1150}
-                height={1150}
-              />
+             <Image
+    src="/images/hero/image.png"
+    alt="Banner"
+    width={1150}
+    height={1150}
+    priority
+  />
             </div>
           </motion.div>
         </div>
