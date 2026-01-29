@@ -35,3 +35,4 @@ Design and code is completely written by Getnext.jsTemplates design and developm
  - Distributed by [ThemeWagon](https://themewagon.com)
 
 # ideia-landing-page
+# lp-azume
