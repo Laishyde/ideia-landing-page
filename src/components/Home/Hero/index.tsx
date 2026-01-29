@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import BuyCrypto from "./buy-form";
 import SellCrypto from "./sell-form";
 
-
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { getImagePrefix } from "@/utils/utils";
@@ -69,44 +68,58 @@ const Hero = () => {
                 height={40}
               />
               <p className="text-white sm:text-28 text-18 mb-0">
-              
-soluções em informática
-
+                soluções em informática
               </p>
             </div>
-        <h1 className="font-medium lg:text-76 md:text-70 text-54 text-white mb-6">
-    Seja Bem vindo a <br />
-    <span className="text-primary whitespace-nowrap">iBtech Manaus.</span>
-  </h1>
+            <h1 className="font-medium lg:text-76 md:text-70 text-54 text-white mb-6">
+              Seja Bem vindo a <br />
+              <span className="text-primary whitespace-nowrap">iBtech Manaus.</span>
+            </h1>
 
-  <p className="text-white sm:text-28 text-18 mb-6">
-    Entre em contato via WhatsApp e tire todas suas dúvidas, estamos prontos para te ajudar.
-  </p>
+            <p className="text-white sm:text-28 text-18 mb-6">
+              Entre em contato via WhatsApp e tire todas suas dúvidas, estamos prontos para te ajudar.
+            </p>
 
-  <div className="flex justify-center lg:justify-start">
-    <button
-      className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7"
-      onClick={() => setIsBuyingOpen(true)}
-    >
-      Quero um orçamento
-    </button>
+            <div className="flex justify-center lg:justify-start mb-8 md:mb-20">
+              <button
+                className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7"
+                onClick={() => setIsBuyingOpen(true)}
+              >
+                Quero um orçamento
+              </button>
             </div>
-            <div className="flex items-center md:justify-start justify-center gap-12 mt-20">
-             
-            </div>
+
+            {/* Imagem mobile - escondida em telas grandes */}
+            <motion.div
+              {...rightAnimation}
+              className="lg:hidden block mx-auto mt-12"
+            >
+              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto">
+                <Image
+                  src="/images/hero/image.png"
+                  alt="Banner"
+                  width={320}
+                  height={320}
+                  className="rounded-2xl shadow-2xl object-cover"
+                  priority
+                />
+              </div>
+            </motion.div>
           </motion.div>
+
+          {/* Imagem desktop - só aparece em telas grandes */}
           <motion.div
             {...rightAnimation}
             className="col-span-7 lg:block hidden"
           >
             <div className="ml-20 -mr-64">
-             <Image
-    src="/images/hero/image.png"
-    alt="Banner"
-    width={1150}
-    height={1150}
-    priority
-  />
+              <Image
+                src="/images/hero/image.png"
+                alt="Banner"
+                width={1150}
+                height={1150}
+                priority
+              />
             </div>
           </motion.div>
         </div>

@@ -200,97 +200,99 @@ const TimeLine = () => {
 </div>
 
 
-      {/* TELEFONE/TIMELINE ORIGINAL (PERFEITAMENTE ALINHADO ABAIXO) */}
-      <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md lg:px-16 px-4 pt-20 md:pt-32">
-        <div className="container mx-auto lg:max-w-screen-xl px-4">
-        {/* CARD PRINCIPAL */}
-        <div className="bg-section bg-opacity-10 px-16 py-14 rounded-3xl border-2 border-opacity-20 border-section grid grid-cols-12 items-center before:content-[''] before:absolute relative before:w-96 before:h-64 before:bg-start before:bg-no-repeat before:-bottom-11 overflow-hidden lg:before:right-48 before:-z-1 before:opacity-10 mb-20 md:mb-32">
-          <div className="lg:col-span-8 col-span-12">
-            <h2 className="text-white sm:text-40 text-30 mb-6">
-             SOBRRE NÓS<span className="text-primary">Nossa Missão </span>
-            </h2>
-            <p className="text-muted text-opacity-60 text-[23px]">
-             Levamos mais comodidade até você com nosso serviço de retirada e entrega por motoboy! Basta agendar com antecedência para que possamos montar a rota e garantir um atendimento rápido, seguro e sem complicações.
-              <br />Na Ibtech, estamos unidos pelo propósito de trabalhar com transparência, respeito, integridade, criatividade e empatia. Pensamos diariamente na missão que move nossos ideais de “manter pessoas e empresas conectadas”. Entendemos que nos dias de hoje, não estar conectado é ao mesmo tempo, estar por fora do momento.
-            </p>
-          </div>
-          <div className="lg:col-span-4 col-span-12">
-            <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
-              <Link 
-  href="#"
-  className="
-    group relative overflow-hidden
-    bg-gradient-to-r from-[#99e39e] via-emerald-400 to-green-500
-    hover:from-emerald-400 hover:to-[#99e39e]
-    text-black font-bold
-    text-base sm:text-lg
-    px-6 sm:px-12
-    py-3 sm:py-5
-    rounded-3xl
-    shadow-2xl hover:shadow-3xl hover:shadow-emerald-500/50
-    border-2 border-white/20 backdrop-blur-sm
-    transform hover:scale-105 hover:-translate-y-1
-    transition-all duration-500
-    inline-flex items-center justify-center
-    min-h-[56px]
-    text-center
-    w-full sm:w-auto
-  "
->
-  <span className="relative z-10 whitespace-normal leading-tight">
-    Solicitar Orçamento Agora
-  </span>
-
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
-
-  <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
-    <div className="absolute w-2 h-2 bg-white/60 rounded-full animate-ping top-2 left-2"></div>
-    <div className="absolute w-1.5 h-1.5 bg-white/40 rounded-full animate-ping delay-150 top-3 right-4"></div>
-    <div className="absolute w-2 h-2 bg-white/50 rounded-full animate-ping delay-300 bottom-2 left-4"></div>
-  </div>
-</Link>
-
-
-            </div>
-          </div>
-        </div>
-          
-          <motion.div
-            whileInView={{ scale: 1, opacity: 1 }}
-            initial={{ scale: 0.8, opacity: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            {/* Todo o resto do seu timeline continua exatamente igual */}
-            <div className="md:block hidden relative">
-              {/* ... seu código do telefone/timeline continua igual ... */}
-              {/* WRAPPER COM BORDER RADIUS */}
-<div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl mx-auto w-80% max-w-4xl">
-  <Image 
-  src="/images/timeline/timeline.webp"
-
-    alt="image"
-    width={1220}
-    height={1000}
-    className="w-full h-auto block"
-  />
-</div>
-
-              {/* resto das posições absolutas... */}
-            </div>
-            <div className="grid sm:grid-cols-2 gap-8 md:hidden">
-              {timelineData.map((item, index) => (
-                <div key={index} className="flex items-center gap-6">
-                  
-                  <div className="text-start">
-                    <h4 className="text-28 text-muted mb-2">{item.title}</h4>
-                    <p className="text-muted text-opacity-60 text-18">{item.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+     {/* TELEFONE/TIMELINE SEM ESPAÇO BRANCO */}
+<div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md lg:px-16 px-4 pt-20 md:pt-32 pb-0">
+  <div className="container mx-auto lg:max-w-screen-xl px-4">
+    {/* CARD PRINCIPAL - MELHORADO PARA MOBILE */}
+    <div className="bg-section bg-opacity-10 px-4 py-12 md:px-16 md:py-14 rounded-3xl border-2 border-opacity-20 border-section grid grid-cols-12 items-start md:items-center before:content-[''] before:absolute relative before:w-96 before:h-64 before:bg-start before:bg-no-repeat before:-bottom-11 overflow-hidden lg:before:right-48 before:-z-1 before:opacity-10 mb-12 md:mb-20 lg:mb-32">
+      <div className="lg:col-span-8 col-span-12 order-1">
+        <h2 className="text-white sm:text-40 text-28 md:text-30 mb-6 leading-tight">
+         <span className="text-primary">Nossa Missão </span>
+        </h2>
+        <div className="text-muted text-opacity-60 text-lg md:text-[23px] leading-relaxed space-y-4">
+          <p>
+            Levamos mais comodidade até você com nosso serviço de retirada e entrega por motoboy! Basta agendar com antecedência para que possamos montar a rota e garantir um atendimento rápido, seguro e sem complicações.
+          </p>
+          <p>
+            Na Ibtech, estamos unidos pelo propósito de trabalhar com transparência, respeito, integridade, criatividade e empatia. Pensamos diariamente na missão que move nossos ideais de "manter pessoas e empresas conectadas".
+          </p>
+          <p>
+            Entendemos que nos dias de hoje, não estar conectado é ao mesmo tempo, estar por fora do momento.
+          </p>
         </div>
       </div>
+      
+      <div className="lg:col-span-4 col-span-12 order-2 lg:order-3">
+        <div className="flex lg:justify-end lg:mt-0 mt-8 justify-center">
+          <Link 
+            href="#"
+            className="
+              group relative overflow-hidden
+              bg-gradient-to-r from-[#99e39e] via-emerald-400 to-green-500
+              hover:from-emerald-400 hover:to-[#99e39e]
+              text-black font-bold
+              text-base sm:text-lg
+              px-6 sm:px-12
+              py-3 sm:py-5
+              rounded-3xl
+              shadow-2xl hover:shadow-3xl hover:shadow-emerald-500/50
+              border-2 border-white/20 backdrop-blur-sm
+              transform hover:scale-105 hover:-translate-y-1
+              transition-all duration-500
+              inline-flex items-center justify-center
+              min-h-[56px]
+              text-center
+              w-full sm:w-auto max-w-sm
+            "
+          >
+            <span className="relative z-10 whitespace-normal leading-tight">
+              Solicitar Orçamento Agora
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
+              <div className="absolute w-2 h-2 bg-white/60 rounded-full animate-ping top-2 left-2"></div>
+              <div className="absolute w-1.5 h-1.5 bg-white/40 rounded-full animate-ping delay-150 top-3 right-4"></div>
+              <div className="absolute w-2 h-2 bg-white/50 rounded-full animate-ping delay-300 bottom-2 left-4"></div>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+    
+    {/* IMAGEM ABAIXO DO TEXTO - SEM ESPAÇO BRANCO */}
+    <motion.div
+      whileInView={{ scale: 1, opacity: 1 }}
+      initial={{ scale: 0.8, opacity: 0 }}
+      transition={{ duration: 0.6 }}
+      className="w-full mb-0"
+    >
+      {/* Mobile - Imagem menor e centralizada SEM margem */}
+      <div className="md:hidden block mx-auto mb-0 max-w-sm">
+        <div className="rounded-2xl overflow-hidden shadow-2xl mb-0">
+          <Image 
+            src="/images/timeline/timeline.webp"
+            alt="Nossa história e missão"
+            width={400}
+            height={320}
+            className="w-full h-auto block object-cover"
+          />
+        </div>
+      </div>
+      
+      {/* Desktop - Imagem grande original SEM margem */}
+      <div className="md:block hidden relative mx-auto w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl mb-0">
+        <Image 
+          src="/images/timeline/timeline.webp"
+          alt="Nossa história e missão"
+          width={1220}
+          height={1000}
+          className="w-full h-auto block"
+        />
+      </div>
+    </motion.div>
+  </div>
+</div>
+
     </section>
   );
 };
