@@ -1,4 +1,4 @@
-import { title } from "process";
+import { getImagePrefix } from "@/utils/utils";
 
 export const footerlabels: { label: string; herf: string }[] = [
   { label: "Terms", herf: "#" },
@@ -7,21 +7,11 @@ export const footerlabels: { label: string; herf: string }[] = [
   { label: "Latest News", herf: "#" },
 ];
 
-export const pricedeta: {
-  title: string;
-  short: string;
-  icon: string;
-  background: string;
-  price: string;
-  mark: string;
-  width: number;
-  height: number;
-  padding: string;
-}[] = [
+export const pricedeta = [
   {
     title: "Bitcoin",
     short: "BTC/USD",
-    icon: "/images/icons/icon-bitcoin.svg",
+    icon: `${getImagePrefix()}images/icons/icon-bitcoin.svg`,
     background: "bg-warning bg-opacity-20",
     price: "$93,291.24",
     mark: "$94,040.99 (-0.9%)",
@@ -32,7 +22,7 @@ export const pricedeta: {
   {
     title: "Ethereum",
     short: "ETH/USD",
-    icon: "/images/icons/icon-ethereum.svg",
+    icon: `${getImagePrefix()}images/icons/icon-ethereum.svg`,
     background: "bg-light_grey",
     price: "$3,128.84",
     mark: "$4,878.26 (-35.9%)",
@@ -41,9 +31,9 @@ export const pricedeta: {
     padding: "px-4 py-2",
   },
   {
-    title: "Bitcoin Cash ",
+    title: "Bitcoin Cash",
     short: "BTC/USD",
-    icon: "/images/icons/icon-bitcoin-circle.svg",
+    icon: `${getImagePrefix()}images/icons/icon-bitcoin-circle.svg`,
     background: "bg-warning bg-opacity-20",
     price: "$443.27",
     mark: "$3,785.82 (-88.3%)",
@@ -54,7 +44,7 @@ export const pricedeta: {
   {
     title: "Litecoin",
     short: "LTC/USD",
-    icon: "/images/icons/icon-litecoin.svg",
+    icon: `${getImagePrefix()}images/icons/icon-litecoin.svg`,
     background: "bg-light_grey",
     price: "$86.11",
     mark: "$410.26 (-79.1%)",
@@ -65,7 +55,7 @@ export const pricedeta: {
   {
     title: "Solana",
     short: "SOL/USD",
-    icon: "/images/icons/icon-solana.svg",
+    icon: `${getImagePrefix()}images/icons/icon-solana.svg`,
     background: "bg-light_grey",
     price: "$238.70",
     mark: "$259.96 (-8.2%)",
@@ -76,7 +66,7 @@ export const pricedeta: {
   {
     title: "Dogecoin",
     short: "DOGE/USD",
-    icon: "/images/icons/icon-dogecoin.svg",
+    icon: `${getImagePrefix()}images/icons/icon-dogecoin.svg`,
     background: "bg-light_grey",
     price: "$0.394",
     mark: "$0.7316 (-46.2%)",
@@ -86,88 +76,77 @@ export const pricedeta: {
   },
 ];
 
-export const portfolioData: { image: string; title: string }[] = [
+export const portfolioData = [
   {
-    image: "/images/portfolio/icon-wallet.svg",
+    image: `${getImagePrefix()}images/portfolio/icon-wallet.svg`,
     title: "Manage your portfolio",
   },
   {
-    image: "/images/portfolio/icon-vault.svg",
+    image: `${getImagePrefix()}images/portfolio/icon-vault.svg`,
     title: "Vault protection",
   },
   {
-    image: "/images/portfolio/icon-mobileapp.svg",
+    image: `${getImagePrefix()}images/portfolio/icon-mobileapp.svg`,
     title: "Mobile apps",
   },
 ];
 
-export const upgradeData: { title: string }[] = [
+export const upgradeData = [
   { title: "100% Secure" },
   { title: "A Fraction of the Cost" },
   { title: "More Durable" },
   { title: "Easier to Use" },
 ];
 
-export const perksData: {
-  icon: string;
-  title: string;
-  text: string;
-  space: string;
-}[] = [
+export const perksData = [
   {
-    icon: "/images/perks/icon-support.svg",
+    icon: `${getImagePrefix()}images/perks/icon-support.svg`,
     title: "24/7 Support",
     text: "Need help? Get your requests solved quickly via support team.",
     space: "lg:mt-8",
   },
   {
-    icon: "/images/perks/icon-community.svg",
+    icon: `${getImagePrefix()}images/perks/icon-community.svg`,
     title: "Community",
     text: "Join the conversations on our worldwide OKEx communities",
     space: "lg:mt-14",
   },
   {
-    icon: "/images/perks/icon-academy.svg",
+    icon: `${getImagePrefix()}images/perks/icon-academy.svg`,
     title: "Academy",
     text: "Learn blockchain and<br /> crypto for free.",
     space: "lg:mt-4",
   },
 ];
 
-export const timelineData: {
-  icon: string;
-  title: string;
-  text: string;
-  position: string;
-}[] = [
+export const timelineData = [
   {
-    icon: "/images/timeline/icon-planning.svg",
+    icon: `${getImagePrefix()}images/timeline/icon-planning.svg`,
     title: "Planejamento",
     text: "Diagnosticar seu equipamento e planejar a melhor solução",
     position: "md:top-0 md:left-0",
   },
   {
-    icon: "/images/timeline/icon-refinement.svg",
+    icon: `${getImagePrefix()}images/timeline/icon-refinement.svg`,
     title: "Reparo",
     text: "Realizar a manutenção com peças originais de qualidade",
     position: "md:top-0 md:right-0",
   },
   {
-    icon: "/images/timeline/icon-prototype.svg",
+    icon: `${getImagePrefix()}images/timeline/icon-prototype.svg`,
     title: "Teste",
     text: "Testar completamente o funcionamento após reparo",
     position: "md:bottom-0 md:left-0",
   },
   {
-    icon: "/images/timeline/icon-support.svg",
+    icon: `${getImagePrefix()}images/timeline/icon-support.svg`,
     title: "Entrega",
     text: "Entregar seu equipamento funcionando perfeitamente",
     position: "md:bottom-0 md:right-0",
-  }
-
+  },
 ];
 
-export const CryptoData: { name: string; price: number }[] = [
+export const CryptoData = [
   { name: "Bitcoin BTC/USD", price: 67646.84 },
   { name: "Ethereum ETH/USD", price: 2515.93 },
   { name: "Bitcoin Cash BTC/USD", price: 366.96 },
