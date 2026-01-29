@@ -84,7 +84,12 @@ soluções em informática
   </p>
 
   <div className="flex justify-center lg:justify-start">
+    <button
+      className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7"
+      onClick={() => setIsBuyingOpen(true)}
+    >
       Quero um orçamento
+    </button>
             </div>
             <div className="flex items-center md:justify-start justify-center gap-12 mt-20">
              
