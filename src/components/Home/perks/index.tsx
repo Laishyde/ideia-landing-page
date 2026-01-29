@@ -34,20 +34,40 @@ const Perks = () => {
           </div>
           <div className="lg:col-span-4 col-span-12">
             <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
-            <Link 
+           <Link 
   href="#"
-  className="group relative overflow-hidden bg-gradient-to-r from-[#99e39e] via-emerald-400 to-green-500 hover:from-emerald-400 hover:to-[#99e39e] text-black font-bold text-lg px-12 py-5 rounded-3xl shadow-2xl hover:shadow-3xl hover:shadow-emerald-500/50 border-2 border-white/20 backdrop-blur-sm transform hover:scale-105 hover:-translate-y-1 transition-all duration-500 inline-flex items-center justify-center h-14"
+  className="
+    group relative overflow-hidden
+    bg-gradient-to-r from-[#99e39e] via-emerald-400 to-green-500
+    hover:from-emerald-400 hover:to-[#99e39e]
+    text-black font-bold
+    text-base sm:text-lg
+    px-6 sm:px-12
+    py-3 sm:py-5
+    rounded-3xl
+    shadow-2xl hover:shadow-3xl hover:shadow-emerald-500/50
+    border-2 border-white/20 backdrop-blur-sm
+    transform hover:scale-105 hover:-translate-y-1
+    transition-all duration-500
+    inline-flex items-center justify-center
+    min-h-[56px]
+    text-center
+    w-full sm:w-auto
+  "
 >
-  <span className="relative z-10 whitespace-nowrap">
+  <span className="relative z-10 whitespace-normal leading-tight">
     Solicitar Orçamento Agora
   </span>
+
   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
+
   <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
     <div className="absolute w-2 h-2 bg-white/60 rounded-full animate-ping top-2 left-2"></div>
     <div className="absolute w-1.5 h-1.5 bg-white/40 rounded-full animate-ping delay-150 top-3 right-4"></div>
     <div className="absolute w-2 h-2 bg-white/50 rounded-full animate-ping delay-300 bottom-2 left-4"></div>
   </div>
 </Link>
+
 
             </div>
           </div>
