@@ -152,3 +152,4 @@ export const CryptoData = [
   { name: "Bitcoin Cash BTC/USD", price: 366.96 },
   { name: "Litecoin LTC/USD", price: 61504.54 },
 ];
+// fix images deploy
