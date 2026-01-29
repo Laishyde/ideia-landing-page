@@ -201,29 +201,26 @@ const TimeLine = () => {
 
 
      {/* TELEFONE/TIMELINE SEM ESPAÇO BRANCO */}
-<div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md lg:px-16 px-4 pt-20 md:pt-32 pb-0">
   <div className="container mx-auto lg:max-w-screen-xl px-4">
-    {/* CARD PRINCIPAL - MELHORADO PARA MOBILE */}
-    <div className="bg-section bg-opacity-10 px-4 py-12 md:px-16 md:py-14 rounded-3xl border-2 border-opacity-20 border-section grid grid-cols-12 items-start md:items-center before:content-[''] before:absolute relative before:w-96 before:h-64 before:bg-start before:bg-no-repeat before:-bottom-11 overflow-hidden lg:before:right-48 before:-z-1 before:opacity-10 mb-12 md:mb-20 lg:mb-32">
-      <div className="lg:col-span-8 col-span-12 order-1">
-        <h2 className="text-white sm:text-40 text-28 md:text-30 mb-6 leading-tight">
-         <span className="text-primary">Nossa Missão </span>
+   
+    
+
+    {/* CARD PRINCIPAL - SEGUNDO (IGUAL AO PRIMEIRO) */}
+    <div className="bg-section bg-opacity-10 px-16 py-14 rounded-3xl border-2 border-opacity-20 border-section grid grid-cols-12 items-center before:content-[''] before:absolute relative before:w-96 before:h-64 before:bg-start before:bg-no-repeat before:-bottom-11 overflow-hidden lg:before:right-48 before:-z-1 before:opacity-10 mb-20 md:mb-32">
+      <div className="lg:col-span-8 col-span-12">
+        <h2 className="text-white sm:text-40 text-30 mb-6">
+          <span className="text-primary">Nossa Missão </span>
         </h2>
-        <div className="text-muted text-opacity-60 text-lg md:text-[23px] leading-relaxed space-y-4">
-          <p>
-            Levamos mais comodidade até você com nosso serviço de retirada e entrega por motoboy! Basta agendar com antecedência para que possamos montar a rota e garantir um atendimento rápido, seguro e sem complicações.
-          </p>
-          <p>
-            Na Ibtech, estamos unidos pelo propósito de trabalhar com transparência, respeito, integridade, criatividade e empatia. Pensamos diariamente na missão que move nossos ideais de "manter pessoas e empresas conectadas".
-          </p>
-          <p>
-            Entendemos que nos dias de hoje, não estar conectado é ao mesmo tempo, estar por fora do momento.
-          </p>
-        </div>
+        <p className="text-muted text-opacity-60 text-[23px]">
+          Levamos mais comodidade até você com nosso serviço de retirada e entrega por motoboy! Basta agendar com antecedência para que possamos montar a rota e garantir um atendimento rápido, seguro e sem complicações.
+          <br /><br />
+          Na Ibtech, estamos unidos pelo propósito de trabalhar com transparência, respeito, integridade, criatividade e empatia. Pensamos diariamente na missão que move nossos ideais de "manter pessoas e empresas conectadas".
+          <br /><br />
+          Entendemos que nos dias de hoje, não estar conectado é ao mesmo tempo, estar por fora do momento.
+        </p>
       </div>
-      
-      <div className="lg:col-span-4 col-span-12 order-2 lg:order-3">
-        <div className="flex lg:justify-end lg:mt-0 mt-8 justify-center">
+      <div className="lg:col-span-4 col-span-12">
+        <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
           <Link 
             href="#"
             className="
@@ -242,7 +239,7 @@ const TimeLine = () => {
               inline-flex items-center justify-center
               min-h-[56px]
               text-center
-              w-full sm:w-auto max-w-sm
+              w-full sm:w-auto
             "
           >
             <span className="relative z-10 whitespace-normal leading-tight">
@@ -258,15 +255,15 @@ const TimeLine = () => {
         </div>
       </div>
     </div>
-    
-    {/* IMAGEM ABAIXO DO TEXTO - SEM ESPAÇO BRANCO */}
+
+    {/* IMAGEM ABAIXO DOS CARDS */}
     <motion.div
       whileInView={{ scale: 1, opacity: 1 }}
       initial={{ scale: 0.8, opacity: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full mb-0"
+      className="w-full mb-0 mt-8"
     >
-      {/* Mobile - Imagem menor e centralizada SEM margem */}
+      {/* Mobile - Imagem menor e centralizada */}
       <div className="md:hidden block mx-auto mb-0 max-w-sm">
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-0">
           <Image 
@@ -279,7 +276,7 @@ const TimeLine = () => {
         </div>
       </div>
       
-      {/* Desktop - Imagem grande original SEM margem */}
+      {/* Desktop - Imagem grande original */}
       <div className="md:block hidden relative mx-auto w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl mb-0">
         <Image 
           src="/images/timeline/timeline.webp"
@@ -291,7 +288,6 @@ const TimeLine = () => {
       </div>
     </motion.div>
   </div>
-</div>
 
     </section>
   );

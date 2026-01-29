@@ -83,12 +83,37 @@ const Hero = () => {
             </p>
 
             <div className="flex justify-center lg:justify-start mb-8 md:mb-20">
-              <button
-                className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7"
-                onClick={() => setIsBuyingOpen(true)}
-              >
-                Quero um orçamento
-              </button>
+              <Link 
+            href="#"
+            className="
+              group relative overflow-hidden
+              bg-gradient-to-r from-[#99e39e] via-emerald-400 to-green-500
+              hover:from-emerald-400 hover:to-[#99e39e]
+              text-black font-bold
+              text-base sm:text-lg
+              px-6 sm:px-12
+              py-3 sm:py-5
+              rounded-3xl
+              shadow-2xl hover:shadow-3xl hover:shadow-emerald-500/50
+              border-2 border-white/20 backdrop-blur-sm
+              transform hover:scale-105 hover:-translate-y-1
+              transition-all duration-500
+              inline-flex items-center justify-center
+              min-h-[56px]
+              text-center
+              w-full sm:w-auto max-w-sm
+            "
+          >
+            <span className="relative z-10 whitespace-normal leading-tight">
+              Solicitar Orçamento Agora
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
+              <div className="absolute w-2 h-2 bg-white/60 rounded-full animate-ping top-2 left-2"></div>
+              <div className="absolute w-1.5 h-1.5 bg-white/40 rounded-full animate-ping delay-150 top-3 right-4"></div>
+              <div className="absolute w-2 h-2 bg-white/50 rounded-full animate-ping delay-300 bottom-2 left-4"></div>
+            </div>
+          </Link>
             </div>
 
             {/* Imagem mobile - escondida telas grandes */}
