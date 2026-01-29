@@ -246,7 +246,8 @@ const TimeLine = () => {
               {/* WRAPPER COM BORDER RADIUS */}
 <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl mx-auto w-80% max-w-4xl">
   <Image 
-    src={`${getImagePrefix()}images/timeline/timeline.webp`} 
+  src="/images/timeline/timeline.webp"
+
     alt="image"
     width={1220}
     height={1000}
