@@ -71,10 +71,12 @@ const Hero = () => {
                 soluções em informática
               </p>
             </div>
-          <h1 className="font-medium lg:text-76 md:text-70 text-44 leading-[1.2] text-white mb-6">
-  Seja Bem vindo <br className="hidden sm:block" />
-  a <span className="text-primary whitespace-nowrap block sm:inline">iBtech Manaus.</span>
+      <h1 className="font-medium lg:text-64 md:text-66 text-40 sm:text-44 leading-[1.2] text-white mb-6">
+  Seja Bem-vindo  a
+  <br className="hidden sm:block" />
+  <span className="text-primary whitespace-nowrap block sm:inline">iBtech Manaus</span>
 </h1>
+
 
 
 
