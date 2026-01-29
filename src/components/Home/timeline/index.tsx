@@ -221,7 +221,7 @@ const TimeLine = () => {
       </div>
       <div className="lg:col-span-4 col-span-12">
         <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
-          <Link 
+           <Link 
             href="#"
             className="
               group relative overflow-hidden
@@ -239,11 +239,11 @@ const TimeLine = () => {
               inline-flex items-center justify-center
               min-h-[56px]
               text-center
-              w-full sm:w-auto
+              w-full sm:w-auto max-w-sm
             "
           >
             <span className="relative z-10 whitespace-normal leading-tight">
-              Solicitar Orçamento Agora
+          Orçamento agora
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
