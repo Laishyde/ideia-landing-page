@@ -15,28 +15,29 @@ const TimeLine = () => {
 
 
   const reviews = [
-    {
-      name: "Lucas Ads",
-      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjVpgOBu0H5MWSvoFXeUkQe3URIce7svzOyfafhflBBpBD-lGrXZ=w40-h40-c-rp-mo-br100",
-      date: "2 meses atrás",
-      text: "Simplesmente a melhor assistência técnica de Manaus! Levei meu celular que estava travando muito e a equipe da IBTEC Manaus resolveu tudo com uma rapidez e profissionalismo incrível.",
-      stars: 5
-    },
-    {
-      name: "Rodrigo Arthur", 
-      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjUUAl7Kws89uINYDD4hA0MTda0E66tEMFaCl5zqP1J3VCYzY6KA=w40-h40-c-rp-mo-br100",
-      date: "2 meses atrás",
-      text: "Atendimento de grande qualidade e confiança, obrigado pela manutenção do meu celular.",
-      stars: 5
-    },
-    {
-      name: "Joaquim Silva",
-      avatar: "https://lh3.googleusercontent.com/a-/ALV-UjW0E97F72hEst6YbptDDddvY9AQNEWdWlo2bI-HCvjjz_rel20I=w40-h40-c-rp-mo-br100",
-      date: "2 meses atrás",
-      text: "Excelente atendimento! A equipe da Ibtech foi muito atenciosa e profissional. Resolveram meu problema com rapidez e transparência.",
-      stars: 5
-    }
-  ];
+  {
+    name: "Carlos Menezes",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    date: "2 meses atrás",
+    text: "Sistema extremamente eficiente! O software de videomonitoramento trouxe muito mais controle e segurança para nossa empresa. Interface intuitiva e acesso rápido.",
+    stars: 5
+  },
+  {
+    name: "Fernanda Lopes",
+    avatar: "https://randomuser.me/api/portraits/women/45.jpg",
+    date: "3 meses atrás",
+    text: "Excelente solução em videomonitoramento. Conseguimos acompanhar tudo em tempo real, com estabilidade e ótima qualidade de imagem.",
+    stars: 5
+  },
+  {
+    name: "Rafael Nogueira",
+    avatar: "https://randomuser.me/api/portraits/men/54.jpg",
+    date: "1 mês atrás",
+    text: "Plataforma moderna, segura e fácil de usar. Atendeu perfeitamente às necessidades do nosso negócio e melhorou muito a gestão da segurança.",
+    stars: 5
+  }
+];
+
 
   // Auto slide
   useEffect(() => {
@@ -208,16 +209,15 @@ const TimeLine = () => {
     {/* CARD PRINCIPAL - SEGUNDO (IGUAL AO PRIMEIRO) */}
     <div className="bg-section bg-opacity-10 px-16 py-14 rounded-3xl border-2 border-opacity-20 border-section grid grid-cols-12 items-center before:content-[''] before:absolute relative before:w-96 before:h-64 before:bg-start before:bg-no-repeat before:-bottom-11 overflow-hidden lg:before:right-48 before:-z-1 before:opacity-10 mb-20 md:mb-32">
       <div className="lg:col-span-8 col-span-12">
-        <h2 className="text-white sm:text-40 text-30 mb-6">
+         <h2 className="text-white sm:text-40 text-30 mb-6">
           <span className="text-primary">Nossa Missão </span>
         </h2>
-        <p className="text-muted text-opacity-60 text-[23px]">
-          Levamos mais comodidade até você com nosso serviço de retirada e entrega por motoboy! Basta agendar com antecedência para que possamos montar a rota e garantir um atendimento rápido, seguro e sem complicações.
-          <br /><br />
-          Na Ibtech, estamos unidos pelo propósito de trabalhar com transparência, respeito, integridade, criatividade e empatia. Pensamos diariamente na missão que move nossos ideais de "manter pessoas e empresas conectadas".
-          <br /><br />
-          Entendemos que nos dias de hoje, não estar conectado é ao mesmo tempo, estar por fora do momento.
-        </p>
+       <p className="text-muted text-opacity-60 text-[23px]">
+  Nossa missão é conectar pessoas e empresas por meio de soluções tecnológicas inteligentes, seguras e eficientes.
+  <br /><br />
+  Atuamos com transparência, inovação e compromisso para garantir conectividade, desempenho e tranquilidade no dia a dia.
+</p>
+
       </div>
       <div className="lg:col-span-4 col-span-12">
         <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
@@ -242,9 +242,10 @@ const TimeLine = () => {
               w-full sm:w-auto max-w-sm
             "
           >
-            <span className="relative z-10 whitespace-normal leading-tight">
-          Orçamento agora
-            </span>
+         <span className="relative z-10 whitespace-normal leading-tight">
+  Solicitar Demonstração
+</span>
+
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
               <div className="absolute w-2 h-2 bg-white/60 rounded-full animate-ping top-2 left-2"></div>
@@ -267,7 +268,7 @@ const TimeLine = () => {
       <div className="md:hidden block mx-auto mb-0 max-w-sm">
         <div className="rounded-2xl overflow-hidden shadow-2xl mb-0">
           <Image 
-            src="/images/timeline/timeline.webp"
+            src="/images/timeline/camera.png"
             alt="Nossa história e missão"
             width={400}
             height={320}
@@ -279,7 +280,7 @@ const TimeLine = () => {
       {/* Desktop - Imagem grande original */}
       <div className="md:block hidden relative mx-auto w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl mb-0">
         <Image 
-          src="/images/timeline/timeline.webp"
+          src="/images/timeline/camera.png"
           alt="Nossa história e missão"
           width={1220}
           height={1000}

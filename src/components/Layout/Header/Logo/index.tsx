@@ -6,14 +6,18 @@ const Logo: React.FC = () => {
   return (
     <Link href="/">
       <Image
-      src="/images/logo/logo.png"
+  src="/images/logo/logo.png"
+  alt="logo"
+  width={150}
+  height={45}
+  quality={100}
+  style={{
+    maxWidth: "150px",
+    height: "auto",
+    objectFit: "contain"
+  }}
+/>
 
-        alt="logo"
-        width={160}
-        height={50}
-        style={{ width: "auto", height: "auto" }}
-        quality={100}
-      />
     </Link>
   );
 };

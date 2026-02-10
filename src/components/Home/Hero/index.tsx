@@ -58,30 +58,35 @@ const Hero = () => {
       id="main-banner"
     >
       <div className="container mx-auto lg:max-w-screen-xl px-4">
-        <div className="grid grid-cols-12">
-          <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">
-            <div className="flex gap-6 items-center lg:justify-start justify-center mb-5 mt-24">
-              <Image
-                src="/images/icons/icon-bag.svg"
-                alt="icon"
-                width={40}
-                height={40}
-              />
-              <p className="text-white sm:text-28 text-18 mb-0">
-                soluções em informática
-              </p>
-            </div>
+  <div className="grid grid-cols-12">
+    <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">
+      
+      {/* ÍCONE + TEXTO (AJUSTADO APENAS NO RESPONSIVO) */}
+      <div className="flex gap-4 items-center justify-start lg:justify-start mb-5 mt-24">
+        <Image
+          src="/images/icons/icon-bag.svg"
+          alt="icon"
+          width={40}
+          height={40}
+        />
+        <p className="text-white sm:text-28 text-18 mb-0">
+          Software de Videomonitoramento Inteligente
+        </p>
+      </div>
+
       <h1 className="font-medium lg:text-64 md:text-66 text-40 sm:text-44 leading-[1.2] text-white mb-6">
-  Seja Bem-vindo  a
-  <br className="hidden sm:block" />
-  <span className="text-primary whitespace-nowrap block sm:inline">iBtech Manaus</span>
-</h1>
+        Seja Bem-vindo a
+        <br className="hidden sm:block" />
+        <span className="text-primary whitespace-nowrap block sm:inline">
+          SpectraAI
+        </span>
+      </h1>
 
 
 
 
             <p className="text-white sm:text-28 text-18 mb-6">
-              Entre em contato via WhatsApp e tire todas suas dúvidas, estamos prontos para te ajudar.
+            Entre em contato pelo WhatsApp e esclareça suas dúvidas com nosso time especializado.
             </p>
 
             <div className="flex justify-center lg:justify-start mb-8 md:mb-20">
@@ -107,7 +112,7 @@ const Hero = () => {
             "
           >
             <span className="relative z-10 whitespace-normal leading-tight">
-              Solicitar Orçamento Agora
+             Conhecer a Solução Agora
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 group-hover:opacity-100 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000 skew-x-12" />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100">
