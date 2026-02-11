@@ -75,10 +75,10 @@ const Hero = () => {
       </div>
 
       <h1 className="font-medium lg:text-64 md:text-66 text-40 sm:text-44 leading-[1.2] text-white mb-6">
-        Seja Bem-vindo a
+     Segurança inteligente.
         <br className="hidden sm:block" />
         <span className="text-primary whitespace-nowrap block sm:inline">
-          SpectraAI
+      Decisões em tempo real.
         </span>
       </h1>
 
@@ -86,7 +86,7 @@ const Hero = () => {
 
 
             <p className="text-white sm:text-28 text-18 mb-6">
-            Entre em contato pelo WhatsApp e esclareça suas dúvidas com nosso time especializado.
+           Com a SpectraAI, você transforma imagens em dados estratégicos. Monitore com precisão.
             </p>
 
             <div className="flex justify-center lg:justify-start mb-8 md:mb-20">
@@ -125,20 +125,20 @@ const Hero = () => {
 
             {/* Imagem mobile - escondida telas grandes */}
             <motion.div
-              {...rightAnimation}
-              className="lg:hidden block mx-auto mt-12"
-            >
-              <div className="w-64 h-64 md:w-80 md:h-80 mx-auto">
-                <Image
-                  src="/images/hero/image.png"
-                  alt="Banner"
-                  width={320}
-                  height={320}
-                  className="rounded-2xl shadow-2xl object-cover"
-                  priority
-                />
-              </div>
-            </motion.div>
+  {...rightAnimation}
+  className="lg:hidden block mx-auto mt-12 px-6 mb-12"
+>
+  <div className="w-64 h-64 md:w-80 md:h-80 mx-auto">
+    <Image
+      src="/images/hero/image.png"
+      alt="Banner"
+      width={320}
+      height={320}
+      className="rounded-2xl shadow-2xl object-cover max-w-full"
+      priority
+    />
+  </div>
+</motion.div>
           </motion.div>
 
           {/* Imagem desktop - só aparece em telas grandes */}
