@@ -25,7 +25,7 @@ const Work = () => {
       )
     },
     {
-      title: "Sistema Rápido, Seguro e Confiáve",
+      title: "Sistema Rápido, Seguro e Confiável",
       description: "Plataforma estável e otimizada para acesso rápido, com alta disponibilidade e segurança de dados.",
       icon: (
         <svg className="w-8 h-8 text-[#99e39e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
