@@ -78,7 +78,7 @@ const Hero = () => {
      Segurança inteligente.
         <br className="hidden sm:block" />
         <span className="text-primary whitespace-nowrap block sm:inline">
-      Decisões em tempo real.
+      em tempo real.
         </span>
       </h1>
 
